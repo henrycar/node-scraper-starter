@@ -1,15 +1,3 @@
-# node-scraper
- Cheerio based scraper starter for any website scraping
-
-## Installation
-```sh
-$git clone https://github.com/henrycar/node-scraper-starter
-$cd node-scraper-starter
-$npm install
-```
-
-## Example
-```js
 /**
  * Created by Henry on 2/5/17.
  */
@@ -42,4 +30,3 @@ nodeScraper(url, function (err, res, $, scraper) {
   // out csv
   scraper.outCSV('movie.csv');
 });
-```
