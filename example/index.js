@@ -4,7 +4,9 @@
 var nodeScraper = require('../lib/nodeScraper');
 var url = 'http://www.imdb.com/movies-in-theaters/?ref_=nv_tp_inth_1';
 
-nodeScraper(url, function (err, res, $, scraper) {
+var scraper = new nodeScraper();
+
+scraper.scrape(url, function (err, res, $) {
   if (err) return console.log(err);
 
   // start cheerio logic from here
